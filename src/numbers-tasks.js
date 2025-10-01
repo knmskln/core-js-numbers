@@ -280,11 +280,7 @@ function getFibonacciNumber(index) {
  *   1  => 1
  */
 function getSumToN(n) {
-  let sum = 0;
-  for (let i = 1; i <= n; i += 1) {
-    sum += i;
-  }
-  return sum;
+  return (n * (n + 1)) / 2;
 }
 
 /**
