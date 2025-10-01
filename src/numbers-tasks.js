@@ -562,7 +562,7 @@ function getIntegerPartNumber(number) {
  * 0.1, 0.2, 0.3 => 0.6
  */
 function getSumOfNumbers(x1, x2, x3) {
-  return (x1 + x2 + x3).toFixed(4);
+  return parseFloat((x1 + x2 + x3).toFixed(2));
 }
 
 /**
