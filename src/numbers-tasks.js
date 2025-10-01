@@ -296,14 +296,10 @@ function getSumToN(n) {
  */
 function getSumOfDigits(num) {
   let sum = 0;
-  const numString = num.toString();
-  let digit = 0;
-  let number = num;
-  for (let i = 1; i <= numString.length; i += 1) {
-    digit = number % 10;
-    number /= 10;
-    number = Math.trunc(number);
-    sum += digit;
+  let n = Math.abs(num);
+  while (n > 0) {
+    sum += n % 10;
+    n = Math.trunc(n / 10);
   }
   return sum;
 }
